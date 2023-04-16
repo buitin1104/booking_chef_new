@@ -18,7 +18,7 @@
     <header>
         <h2 class="logo">Logo</h2>
         <nav class="navigation">
-            <a href="#">Home</a>
+            <a href="#">Homes</a>
             <a href="#">About</a>
             <a href="#">Service</a>
             <a href="#">Contact</a>
