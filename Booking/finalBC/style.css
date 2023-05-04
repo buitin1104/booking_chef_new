@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ;
+}
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(231, 217, 217);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s ;
+}
+/*-------------------Header----------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px ;
+    margin: -10px -10px;
+    background: #dddcdc;
+    box-shadow:  0 5px 15 px #9e9898;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration:  none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;   
+}
+#navbar li a:hover
+{
+    color: aquamarine;
+}
+/* #navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#a12929;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+} */
+
+
+/*-------------------HomePage----------------*/
+#hero{
+    background-image: url(/Booking/finalBC/IMG/background.jpg);
+    height: 90vh;
+    width: 91%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#hero h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+#hero h1{
+    color: rgb(199, 41, 178);
+
+}
+#hero h2{
+        font-size: 40px;      
+}
+#hero span{
+    color: #992020;
+}
+#hero p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#hero button{
+    background-image: url(/Booking/finalBC/IMG/button.jpg);
+    background-color: transparent;
+    color: #a12929;
+    border: none;
+    padding:  14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 20px;
+}
+#product1{
+    text-align: center;
+}
+#product1 h2{
+    font-size: 60px;
+}#product1 p{
+    font-size: 20px;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: #edecec;
+
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow:  20px 20px 30px #9e9898;
+    margin: 15px 0;
+    transition: 0.4s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow:  20px 20px 30px #aa3d3d;
+    
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    height: 60vh;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #9e9898;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(205, 139, 8);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(12, 74, 162);
+}
+#product1 .pro .cart{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-weight: 500;
+    color: aquamarine;
+    border: 1px solid #7edb64;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/Booking/finalBC/IMG/TT2.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 40px;    
+}
+#banner button:hover{
+    background: #7edb64;
+    color: #fff;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .news{
+    display: flex;
+}
+#sm-banner .banner-box{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/Booking/finalBC/IMG/ifm1.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    
+}
+#sm-banner .banner-box2{
+    background-image: url(/Booking/finalBC/IMG/ifm2.png);
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner  .banner-box:hover button{
+    background: #7edb64;
+
+    border: 1px solid #7edb64;
+
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(/Booking/finalBC/IMG/bner1.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image:url(/Booking/finalBC/IMG/bner2.png);
+}
+#banner3 .banner-box3{
+    background-image: url(/Booking/finalBC/IMG/bner3.jpg);
+}
+#banner3 h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+}
+#banner3 h3{
+    color: #992020;
+    font-size: 17px;
+    font-weight: 800;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/Booking/finalBC/IMG/bner4.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: beige;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #2b3bc9;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+
+}
+#newsletter p span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #afdd26;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #7edb64;
+    color: #fff;
+    white-space: nowrap;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #dad8d8;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0 0 8px 0;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #2b3bc9;
+    padding-left: 4px;
+    cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #7edb64;
+}
+footer .copy{
+    width: 100%;
+    text-align: center;
+}
+
+/*-------------------Shop Page----------------*/
+#page-header{
+    background-image: url(/Booking/finalBC/IMG/background1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header{
+    font-size: 30px;
+ color: #fff;
+}
+#page-header span{
+    color: rgb(113, 247, 98);
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #7edb64;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 400;
+
+}
+#pagination a li{
+    font-size: 16px;
+    font-weight: 400px;
+}
+/*-------------------Single product----------------*/
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-img{
+    width: 100%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 100%;
+    padding-top: 10px;
+    margin-right:200px;
+}
+#prodetails .single-pro-details h4{
+    padding: 10px 0 10px 0;
+}
+#prodetails .single-pro-details h2{
+    padding: 10px 0 10px 0;
+}
+#prodetails .single-pro-details button{
+    background: #7edb64;
+    color: #fff;
+}
+#prodetails .single-pro-details span{
+     line-height: 25px;
+}
+#prodetails .Outstanding{
+    width: 100%;
+    height: 50px;
+    background-color: #992020;
+}
+#prodetails .Outstanding h4{
+    width: 100%;
+    height: 50px;
+    color: white;
+    margin: 10px 0px 0px 45px;
+    font-size: 15px;
+}
+
+
+/*-------------------Blog----------------*/
+#page-header .blog-header{
+    background-image: url(" ");
+
+}
+#blog{
+    padding: 150px 150px 0 150px;
+
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+#blog .blog-img{
+   width: 50%;
+   margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+   width: 50%;
+  
+}
+#blog .blog-details a{
+   text-decoration: none;
+   font-size: 11px;
+   color: black;
+   font-weight: 700;
+   position: relative;
+   transition: 0.3s;
+}
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+ 
+}
+#blog .blog-details a:hover{
+    color: #7edb64;
+}
+#blog .blog-details a:hover a::after{
+    background-color: #7edb64;
+}
+
+
+/*-------------------About----------------*/
+#page-header .about-header{
+    background-image: url(" ");
+
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head div{
+    padding-left: 40px;
+}
+
+
+/*-------------------Cart----------------*/
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+    border: 1px solid #dad8d8;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody td{
+    font-size: 13px;
+}
+
+/*-------------------Contact----------------*/
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details li p{
+    font-size: 14px;
+    margin: 0;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px; border: 1px solid #edecec;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #9e9898;
+}
+#form-details form button{
+    background-color: #7edb64;
+    color: #fff;
+    
+}
+#form-details .people div img{
+    width: 65%;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+
+}
+#form-details .people div p span{
+    display: block;
+    font-size: 16p;
+    font-weight: 600;
+    color: black;
+}
+#form-details .people div{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 25px;
+}
