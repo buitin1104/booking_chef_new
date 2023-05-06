@@ -1,0 +1,36 @@
+/*-------------------Shop Page----------------*/
+#page-header{
+    background-image: url(../images/IMG/background1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header{
+    font-size: 30px;
+ color: #fff;
+}
+#page-header span{
+    color: rgb(113, 247, 98);
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #7edb64;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 400;
+
+}
+#pagination a li{
+    font-size: 16px;
+    font-weight: 400px;
+}

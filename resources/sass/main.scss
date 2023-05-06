@@ -6,7 +6,7 @@
     font-family: 'Poppin',sans-serif;
 }
 
-body{
+.antialiased{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body{
     background-position: center;
 }
 
-header{
+.home-header{
     position: fixed;
     top: 0;
     left: 0;

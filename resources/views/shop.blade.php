@@ -2,31 +2,15 @@
 
 @section('content')
 <div>
-    <!-- <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                noi dung trang chu
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-    <section id="hero">
-       
+    <section id="page-header">
+        <h2>StayHome</h2>
+        <p>Save more with coupons & up to <span>30% off!</span></p>
+        
     </section>
     <section id="product1" class="section-p1">
-        <h2>Chef Service</h2>
-        <p>Select the desired chef</p>
         <div class="pro-container">
-            <div class="pro">
-                <img src= "{{ Vite::asset('resources/images/IMG/img1.webp') }}" alt="">
+            <div class="pro" onclick="window.location.href='sproduct.html'">
+                <img src="{{ Vite::asset('resources/images/IMG/img1.webp') }}" alt="">
                 <div class="des">
                     <span>Đầu Bếp 2 sao</span>
                     <h5> Mai Phương</h5>
@@ -113,41 +97,69 @@
                 <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
             </div>
             
+            
         </div>
     </section>
-    <section id="banner" class="section-m1">
-        <h4>Featured News</h4>
-       
-      
-    </section>
-    
-    <section id="sm-banner" class="section-p1">
-       
-        <div class="banner-box">
-            <button class="white">lear more</button>
-        </div>
-         <div class="banner-box banner-box2">
-  
-            <button class="white">lear more</button>
         </div>
     </section>
-    <section id="banner3">
-        <div class="banner-box">       
-        </div>
-         <div class="banner-box banner-box2">                 
-        </div>
-         <div class="banner-box banner-box3">     
-        </div>
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
     </section>
     <section id="newsletter" class="section-p1 section-m1" >
         <div class="newstext">
-            <!-- <h3>asdadadas</h3>
-            <p>hueanhad <span>asddyay</span></p> -->
+            <h3>asdadadas</h3>
+            <p>hueanhad <span>asddyay</span></p>
         </div>
         <div class="form">
             <input type="text" placeholder="email?">
             <button class="nomal">sign up</button>
         </div>
     </section>
-</div>
+    <footer class="section-p1">
+        <div class="col">
+            <img  class="logo" width="100px" src="{{ Vite::asset('resources/images/IMG/Bập Bùng Bếp (1).png"') }}" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 23 Điện Biên Phủ, Thành Phố Đà Nẵng</p>
+            <p><strong>Phone:</strong>+84 0917408249</p>
+            <p><strong>Hours:</strong> 8:00 - 20:00, All Day</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">About us</a>
+            <a href="#">About us</a>
+           
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">About us</a>
+            <a href="#">About us</a>
+            <a href="#">About us</a>
+           
+        </div>
+        <div class="col">
+            <h4>Payment</h4>
+            <div class="pay">
+                <img width="60px" src="{{ Vite::asset('resources/images/IMG/pament1.jpg') }}" alt="">
+                <img width="60px" src="{{ Vite::asset('resources/images/IMG/bayment2.jpg') }}" alt="">
+                <img width="60px" src="{{ Vite::asset('resources/images/IMG/zalopay.jpg') }}" alt="">
+            </div>
+            
+        </div>
+        <div class="copy">
+            <p>@2023, HTML CSS Ecommerce Template</p>
+            
+        </div>
+    </footer>
 @endsection
