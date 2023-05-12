@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class CartController extends Controller
 {
     /**
      * Show the application dashboard.
@@ -13,6 +13,6 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('about');
+        return view('cart');
     }
 }

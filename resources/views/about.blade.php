@@ -7,7 +7,7 @@
     <p>Bringing flavor to life, one dish at a time.</p>
 </section>
 <section id="about-head" class="section-p1">
-    <img src="/Booking/finalBC/IMG/about.jpg" alt="">
+    <img src="{{ Vite::asset('resources/images/IMG/about.jpg') }}" alt="">
     <div>
         <h2>Who We Are?</h2>
         <p>Chef is responsible for managing and overseeing activities related to food preparation, cooking, and serving in a restaurant, hotel, or any food establishment. The job of a chef includes planning and preparing menus, ordering ingredients, managing staff, supervising the cooking process, and ensuring the quality and safety of food hygiene.

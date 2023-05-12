@@ -27,12 +27,14 @@
                     <a href="{{ route('blog') }}">Blog</a>
                 </li>
                 <li class="nav-menu__item">
-                    <a href="">About</a>
+                    <a href="{{ route('about') }}">About</a>
                 </li>
                 <li class="nav-menu__item">
-                    <a href="">Contact</a>
+                    <a href="{{ route('contact') }}">Contact</a>
                 </li>
-
+                <li class="nav-menu__item">
+                    <a href="{{ route('cart') }}">Cart</a>
+                </li>
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-menu__item">
@@ -47,7 +49,7 @@
                     @endif
                 @else
                     <li class="nav-menu__item">
-                        <a href="#">
+                        <a href="{{ route('profiles.index') }}">
                             {{ Auth::user()->name }}
                         </a>
                     </li>

@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBiginteger('chef_id')->nullable();
+            $table->foreign('chef_id')->references('id')->on('chefs')->onDelete('cascade');
+            $table->double('rating')->default(0);
+            $table->json('options')->nullable();
+
             $table->timestamps();
         });
     }
