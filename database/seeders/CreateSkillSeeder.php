@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\Skill;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class CreateSkillSeeder extends Seeder
 {
@@ -12,27 +12,28 @@ class CreateSkillSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void 
-     {
+    {
+        Schema::disableForeignKeyConstraints();
         Skill::truncate();
-        $Skills = [
+        Schema::enableForeignKeyConstraints();
+
+        $skills = [
                 [
-                    'name'=>'mon an châu á',
-                    'description'=>'',
+                    'name' => 'mon an châu á',
+                    'description' => 'Chuyen mon an Chau A',
                 ],
                 [
-                    'name'=>'mon an châu âu',
-                    'description'=>'',
+                    'name' => 'mon an châu âu',
+                    'description' => 'Chuyen mon an Chau Au',
                 ],
                 [
-                    'name'=>'mon an nhat',
-                    'description'=>'',
+                    'name' => 'mon an nhat',
+                    'description' => 'Chuyen mon an Nhat',
                 ],
             ];
         
-                foreach ($Skills as $Skill) {
-                    Skill::create($Skill);
-                }
-           
-    
+            foreach ($skills as $skill) {
+                Skill::create($skill);
+            }
     }
 }
