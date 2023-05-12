@@ -90,6 +90,22 @@
             <h2>ĐANG KY</h2>
             <form method="POST" action="{{ route('register') }}">
                 @csrf
+
+                {{-- <div class="row mb-3">
+                    <label for="">loai</label>
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="type" id="type-customer" value="customer">
+                            <label class="form-check-label" for="type-customer">khach hang</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="type" id="type-chef" value="chef">
+                            <label class="form-check-label" for="type-chef">dau bep</label>
+                        </div>
+                    </div>
+                </div> --}}
+
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="person"></ion-icon>
@@ -138,8 +154,6 @@
                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                     <label>Password confirm</label>
                 </div>
-
-
 
                 <div class="remember-fogot">
                     <label><input type="checkbox"> I agree to the terms & conditions</label>
