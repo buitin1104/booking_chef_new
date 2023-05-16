@@ -23,12 +23,12 @@
                         <div class="row information">
                             <h5 class="title">Thông tin khách hàng</h5>
                             <p>Họ tên: <span class="color-blue">{{ $order->user->name }}</span></p>
-                            <p>Số điện thoại: <span class="color-blue">{{ $order->user->detail->phone }}</span></p>
+                            <p>Số điện thoại: <span class="color-blue">{{ $order->user->detail ? $order->user->detail->phone : '' }}</span></p>
                             <p>Email: <span class="color-blue">{{ $order->user->email }}</span></p>
                             <p>
                                 Địa chỉ:
                                 <span class="color-blue">
-                                    {{ $order->user->detail->address }}
+                                    {{ $order->user->detail ? $order->user->detail->address : '' }}
                                 </span>
                             </p>
                             <p>Trạng thái đơn hàng: <span class="color-orange text-uppercase">Đặt hàng</span></p>
