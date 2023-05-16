@@ -74,7 +74,7 @@
                             <p style="font-size: 13px"><b>Họ và tên:</b> {{ $dataEdit->user->name ?? '' }}</p>
                             <p style="font-size: 13px"><b>Email:</b> {{ $dataEdit->user->email ?? '' }}</p>
                             <p style="font-size: 13px"><b>Số điện thoại:</b> {{ $dataEdit->user->detail->phone ?? '' }}</p>
-                            <p style="font-size: 13px"><b>Địa chỉ nhận hàng:</b> {{ $dataEdit->user->detail->address }}</p>
+                            <p style="font-size: 13px"><b>Địa chỉ nhận hàng:</b> {{ $dataEdit->user->detail->address ?? '' }}</p>
                         </div>
                     </div>
                 </div>
