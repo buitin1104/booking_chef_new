@@ -68,11 +68,11 @@
                                         </p>
                                         <p>
                                             <b>Số điện thoại: </b>
-                                            <span>{{ $item->user->detail->phone }}</span>
+                                            <span>{{ $item->user->detail ? $item->user->detail->phone : '' }}</span>
                                         </p>
                                         <p>
                                             <b>Địa chỉ: </b>
-                                            <span>{{ $item->user->detail->address }}</span>
+                                            <span>{{ $item->user->detail ? $item->user->detail->address : '' }}</span>
                                         </p>
                                     </td>
                                     <td>
