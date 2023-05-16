@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Chef;
 
 class HomeController extends Controller
 {
@@ -13,6 +14,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $chefs = Chef::all();
+        // dd($chefs->toArray());
+
+        $viewData = [
+            'chefs' => $chefs,
+        ];
+
+        return view('home', $viewData);
     }
 }

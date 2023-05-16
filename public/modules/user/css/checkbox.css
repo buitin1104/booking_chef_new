@@ -1,0 +1,354 @@
+.checkbox__custom {
+    font-size: 1.3rem;
+    color: #161863;
+    font-weight: bold;
+}
+
+.checkbox__custom .radio-field {
+    display: inline;
+    position: relative;
+}
+
+.checkbox__custom .radio-field label {
+    font-size: 1.4rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.checkbox__custom .radio-field input {
+    display: none;
+}
+
+.checkbox__custom .radio-field-text {
+    width: 110px;
+    text-align: center;
+    background: 0 0;
+    color: #FFF;
+    position: relative;
+    display: inline-block;
+    padding: 6px 8px 5px 8px;
+    vertical-align: top;
+    line-height: 1;
+    font-size: 1.2rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Viga", sans-serif;
+    font-weight: normal;
+    font-weight: 400;
+}
+
+.checkbox__custom .radio-field-text::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #E5E5E5;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+}
+
+.checkbox__custom .radio-field-text::after {
+    content: "\F12C";
+    font-family: "Material Design Icons";
+    color: #fff;
+    position: absolute;
+    top: 1px;
+    font-size: 20px;
+    left: -29px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #58b3f0;
+    transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition-property: transform;
+    transform: scale(0);
+}
+
+.checkbox__custom label input:checked+.radio-field-text::after {
+    transform: scale(1);
+}
+
+.checkbox__custom .publish {
+    background: #9de149;
+}
+
+.checkbox__custom .draft {
+    background: #ffd73f;
+}
+
+.checkbox__custom .private {
+    background: #f5707a;
+}
+
+.checkbox__custom-normal {
+    font-size: 1.5rem;
+    color: #7d7979;
+    font-weight: bold;
+}
+
+.checkbox__custom-normal .radio-field {
+    display: inline;
+    position: relative;
+}
+
+.checkbox__custom-normal .radio-field label {
+    font-size: 1.4rem;
+    padding-left: 28px;
+    line-height: 1.5;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.checkbox__custom-normal .radio-field input {
+    display: none;
+}
+
+.checkbox__custom-normal .radio-field-text {
+    background: 0 0;
+    position: relative;
+    display: inline-block;
+    padding: 6px 8px 5px 8px;
+    vertical-align: top;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-family: "Viga", sans-serif;
+    font-weight: normal;
+    font-weight: 400;
+}
+
+.checkbox__custom-normal .radio-field-text::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #E5E5E5;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+}
+
+.checkbox__custom-normal .radio-field-text::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -26px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #0075ffa1;
+    transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition-property: transform;
+    transform: scale(0);
+}
+
+.checkbox__custom-normal label input:checked+.radio-field-text::after {
+    transform: scale(1);
+}
+
+.label-checkbox {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.label-checkbox span {
+    margin-left: 3px;
+}
+
+.label-checkbox .hrv-checkbox,
+.label-checkbox input[type=checkbox] {
+    position: relative;
+    top: 0;
+    margin: 0 0.5rem 0 0;
+    cursor: pointer;
+}
+
+.label-checkbox .hrv-checkbox:checked:after,
+.label-checkbox input[type=checkbox]:not(.hrv-checkbox):checked:after {
+    border-color: #58b3f0;
+}
+
+.label-checkbox .hrv-checkbox:checked:before,
+.label-checkbox input[type=checkbox]:not(.hrv-checkbox):checked:before {
+    transform: rotate(-45deg) scale(1);
+}
+
+.label-checkbox .hrv-checkbox:before,
+.label-checkbox input[type=checkbox]:not(.hrv-checkbox):before {
+    transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    transform: rotate(-45deg) scale(0);
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 0;
+    top: 0.2em;
+    margin: auto;
+    z-index: 1;
+    width: 12px;
+    height: 6px;
+    border-color: #58b3f0;
+    border-style: none none solid solid;
+    border-width: 2px;
+}
+
+.label-checkbox .hrv-checkbox:after,
+.label-checkbox input[type=checkbox]:not(.hrv-checkbox):after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid #c4cdd5;
+    cursor: pointer;
+}
+
+.checkbox,
+.radio {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    padding-left: 20px;
+}
+
+.checkbox label {
+    display: inline-block;
+    padding-left: 5px;
+    position: relative;
+    font-family: roboto;
+    font-weight: normal;
+}
+
+.checkbox label::before {
+    -o-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 0;
+    border: 1px solid #dadada;
+    content: "";
+    display: inline-block;
+    height: 22px !important;
+    left: -1px;
+    margin-left: -20px;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    width: 22px !important;
+    outline: none !important;
+    margin-top: 2px;
+    top: -3px;
+}
+
+.checkbox label::after {
+    color: #797979;
+    display: inline-block;
+    font-size: 17px;
+    height: 16px;
+    left: 0;
+    margin-left: -20px;
+    padding-left: 2px;
+    padding-top: 1px;
+    position: absolute;
+    top: -4px;
+    width: 16px;
+}
+
+.checkbox input[type=checkbox] {
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+    outline: none !important;
+}
+
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+}
+
+.checkbox input[type=checkbox]:checked+label::after {
+    content: "\F12C";
+    font-family: "Material Design Icons";
+    font-weight: bold;
+}
+
+.checkbox-purple input[type=checkbox]:checked+label::after {
+    color: #ffffff;
+}
+
+label.label-radio-custom span {
+    font-weight: normal;
+}
+
+label {
+    cursor: pointer;
+}
+
+label .hrv-radio,
+label input[type=radio] {
+    position: relative;
+    margin: 0 0.5rem 0 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+label .hrv-radio:before,
+label input[type=radio]:before {
+    transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+    transform: scale(0);
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 1;
+    width: 8px;
+    height: 8px;
+    background: #58b3f0;
+    border-radius: 50%;
+}
+
+label .hrv-radio:checked:before,
+label input[type=radio]:checked:before {
+    transform: scale(1) !important;
+    left: 4px;
+}
+
+label .hrv-radio:after,
+label input[type=radio]:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 1px solid #cedadd;
+    border-radius: 50%;
+}
+
+label .hrv-radio:checked:after,
+label input[type=radio]:checked:after {
+    border: 1px solid #58b3f0;
+    left: -1px;
+}

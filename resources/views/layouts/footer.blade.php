@@ -20,29 +20,29 @@
             <a href="#">About us</a>
             <a href="#">About us</a>
             <a href="#">About us</a>
-           
+
         </div>
         <div class="col">
             <h4>My Account</h4>
             <a href="#">About us</a>
             <a href="#">About us</a>
             <a href="#">About us</a>
-           
+
         </div>
         <div class="col">
             <h4>Payment</h4>
             <a href="#">About us</a>
             <a href="#">About us</a>
             <a href="#">About us</a>
-            <div class="pay">
+            {{-- <div class="pay">
                 <img width="60px" src="../IMG/pament1.jpg" alt="">
                 <img width="60px" src="../IMG/bayment2.jpg" alt="">
                 <img width="60px" src="../IMG/zalopay.jpg" alt="">
-            </div>
-            
+            </div> --}}
+
         </div>
         <div class="copy">
             <p>@2023, HTML CSS Ecommerce Template</p>
-            
+
         </div>
 </footer>

@@ -1,0 +1,73 @@
+2023-05-13 09:09:19,532 WARN No file matches via include "/etc/supervisor.d/*.conf"
+2023-05-13 09:09:19,538 INFO supervisord started with pid 1
+2023-05-13 09:09:20,543 INFO spawned: 'laravel' with pid 7
+2023-05-13 09:09:20,545 INFO spawned: 'php-fpm' with pid 8
+2023-05-13 09:09:20,546 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:09:20,547 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:21,550 INFO spawned: 'laravel' with pid 9
+2023-05-13 09:09:21,552 INFO spawned: 'php-fpm' with pid 10
+2023-05-13 09:09:21,554 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:09:21,555 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:23,560 INFO spawned: 'laravel' with pid 11
+2023-05-13 09:09:23,562 INFO spawned: 'php-fpm' with pid 12
+2023-05-13 09:09:23,564 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:09:23,566 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:26,574 INFO spawned: 'laravel' with pid 13
+2023-05-13 09:09:26,577 INFO spawned: 'php-fpm' with pid 14
+2023-05-13 09:09:26,579 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:09:26,579 INFO gave up: laravel entered FATAL state, too many start retries too quickly
+2023-05-13 09:09:27,581 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-05-13 09:09:27,582 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:28,585 INFO spawned: 'php-fpm' with pid 15
+2023-05-13 09:09:28,588 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:29,591 INFO spawned: 'php-fpm' with pid 16
+2023-05-13 09:09:29,608 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:31,610 INFO spawned: 'php-fpm' with pid 17
+2023-05-13 09:09:31,613 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:34,631 INFO spawned: 'php-fpm' with pid 18
+2023-05-13 09:09:34,644 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:09:35,652 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2023-05-13 09:09:57,697 INFO reaped unknown pid 37 (exit status 0)
+2023-05-13 09:15:15,731 WARN received SIGQUIT indicating exit request
+2023-05-13 09:22:58,359 WARN No file matches via include "/etc/supervisor.d/*.conf"
+2023-05-13 09:22:58,367 INFO supervisord started with pid 1
+2023-05-13 09:22:59,374 INFO spawned: 'laravel' with pid 7
+2023-05-13 09:22:59,377 INFO spawned: 'php-fpm' with pid 8
+2023-05-13 09:22:59,386 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:22:59,388 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:23:00,391 INFO spawned: 'laravel' with pid 9
+2023-05-13 09:23:00,394 INFO spawned: 'php-fpm' with pid 10
+2023-05-13 09:23:00,396 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:23:00,398 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:23:02,423 INFO spawned: 'laravel' with pid 11
+2023-05-13 09:23:02,428 INFO spawned: 'php-fpm' with pid 12
+2023-05-13 09:23:02,432 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:23:02,434 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:23:05,456 INFO spawned: 'laravel' with pid 13
+2023-05-13 09:23:05,465 INFO spawned: 'php-fpm' with pid 14
+2023-05-13 09:23:05,470 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:23:05,472 INFO gave up: laravel entered FATAL state, too many start retries too quickly
+2023-05-13 09:23:05,473 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:23:05,474 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2023-05-13 09:24:04,654 WARN received SIGQUIT indicating exit request
+2023-05-13 09:24:36,061 WARN No file matches via include "/etc/supervisor.d/*.conf"
+2023-05-13 09:24:36,067 INFO supervisord started with pid 1
+2023-05-13 09:24:37,076 INFO spawned: 'laravel' with pid 7
+2023-05-13 09:24:37,081 INFO spawned: 'php-fpm' with pid 8
+2023-05-13 09:24:37,087 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:24:37,088 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:24:38,091 INFO spawned: 'laravel' with pid 9
+2023-05-13 09:24:38,093 INFO spawned: 'php-fpm' with pid 10
+2023-05-13 09:24:38,096 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:24:38,097 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:24:40,117 INFO spawned: 'laravel' with pid 11
+2023-05-13 09:24:40,126 INFO spawned: 'php-fpm' with pid 12
+2023-05-13 09:24:40,133 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:24:40,136 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:24:43,152 INFO spawned: 'laravel' with pid 13
+2023-05-13 09:24:43,161 INFO spawned: 'php-fpm' with pid 14
+2023-05-13 09:24:43,166 WARN exited: laravel (exit status 127; not expected)
+2023-05-13 09:24:43,171 INFO gave up: laravel entered FATAL state, too many start retries too quickly
+2023-05-13 09:24:43,173 WARN exited: php-fpm (exit status 127; not expected)
+2023-05-13 09:24:43,175 INFO gave up: php-fpm entered FATAL state, too many start retries too quickly
+2023-05-14 09:45:34,209 WARN received SIGQUIT indicating exit request

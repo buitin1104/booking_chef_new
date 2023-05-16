@@ -70,7 +70,7 @@ button.white{
     text-decoration:  none;
     font-size: 16px;
     font-weight: 600;
-    color: black;   
+    color: black;
 }
 #navbar li a:hover
 {
@@ -114,7 +114,7 @@ button.white{
 
 }
 #hero h2{
-        font-size: 40px;      
+        font-size: 40px;
 }
 #hero span{
     color: #992020;
@@ -145,8 +145,8 @@ button.white{
 }
 #product1 .pro-container{
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    gap: calc(100% / 40);
+    // padding: 20px;
     flex-wrap: wrap;
     background-color: #edecec;
 
@@ -165,7 +165,7 @@ button.white{
 }
 #product1 .pro:hover{
     box-shadow:  20px 20px 30px #aa3d3d;
-    
+
 }
 #product1 .pro img{
     width: 100%;
@@ -222,7 +222,7 @@ button.white{
 }
 #banner h4{
     color: #fff;
-    font-size: 40px;    
+    font-size: 40px;
 }
 #banner button:hover{
     background: #7edb64;
@@ -248,7 +248,7 @@ button.white{
     background-size: cover;
     background-position: center;
     padding: 30px;
-    
+
 }
 #sm-banner .banner-box2{
     background-image: url(../images/IMG/ifm2.png);

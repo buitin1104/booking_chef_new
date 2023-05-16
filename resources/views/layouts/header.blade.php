@@ -6,70 +6,66 @@
             </a>
         </div>
         <div class="search-box">
-            <div class="input-group mb-0">
-                <input type="text" class="form-control" placeholder="Tim kiem" name="search">
+            <form action="{{ route('chef') }}" method="GET" class="input-group mb-0">
+                <input type="text" class="form-control" value="{{ old('tu-khoa', request()->get('tu-khoa')) }}" placeholder="Tim kiem" name="tu-khoa">
+
                 <div class="input-group-append">
                     <button class="btn btn-outline-success" type="button">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="menu-box">
             <ul class="nav-menu">
                 <li class="nav-menu__item">
-                    <a class="active" href="{{ route('home') }}">Home</a>
+                    <a class="active" href="{{ route('home') }}">Trang chủ</a>
                 </li>
                 <li class="nav-menu__item">
-                    <a href="{{ route('shop') }}">Shop</a>
+                    <a href="{{ route('chef') }}">Đầu bếp</a>
                 </li>
                 <li class="nav-menu__item">
-                    <a href="{{ route('blog') }}">Blog</a>
+                    <a href="{{ route('blog') }}">Tin tức</a>
                 </li>
                 <li class="nav-menu__item">
-                    <a href="{{ route('about') }}">About</a>
+                    <a href="{{ route('about') }}">Về chúng tôi</a>
                 </li>
-                <li class="nav-menu__item">
-                    <a href="{{ route('contact') }}">Contact</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a href="{{ route('cart') }}">Cart</a>
-                </li>
-                @guest
-                    @if (Route::has('login'))
-                        <li class="nav-menu__item">
-                            <a href="{{ route('login') }}">Dang nhap</a>
-                        </li>
-                    @endif
 
-                    @if (Route::has('register'))
-                        <li class="nav-menu__item">
-                            <a href="{{ route('register') }}">dang ki</a>
-                        </li>
-                    @endif
-                @else
-                    <li class="nav-menu__item">
-                        <a href="{{ route('profiles.index') }}">
-                            {{ Auth::user()->name }}
-                        </a>
-                    </li>
-                    <li class="nav-menu__item">
-                        <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                            Log out
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </li>
-                @endguest
                 <li class="nav-menu__item">
-                    <a href="#">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                    <a href="{{ route('contact') }}">Liên hệ</a>
+                </li>
+
+                <li class="nav-menu__item">
+                    <a href="{{ route('cart.index') }}" class="cart-menu">
+                        <span class="countProduct">{{ Session::get('countProduct') ? Session::get('countProduct') : 0 }}</span>
+                        <span>Giỏ hàng</span>
                     </a>
                 </li>
+
+                @if (auth()->user())
+                    <div class="dropdown dropdown-user">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                            {{ Auth::user()->name }}
+                        </button>
+                        <div class="dropdown-menu">
+                            @if (auth()->user()->role === 1)
+                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Trang quản trị</a>
+                            @endif
+                            <a class="dropdown-item" href="{{ route('order.index') }}">Lịch sử</a>
+                            <a class="dropdown-item" href="{{ route('logout') }}">Đăng xuất</a>
+                        </div>
+                    </div>
+                @else
+                    <div class="dropdown dropdown-user">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                            Tài khoản
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ route('register') }}">Đăng ký</a>
+                            <a class="dropdown-item" href="{{ route('login') }}">Đăng nhập</a>
+                        </div>
+                    </div>
+                @endif
             </ul>
 
         </div>

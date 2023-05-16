@@ -10,11 +10,19 @@ class Chef extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id',
         'skill_id',
         'name',
+        'email',
         'address',
-        'phone_number',
+        'phone',
+        'avatar',
         'experience_year',
+        'password',
+        'price',
     ];
+
+    public function review()
+    {
+        return $this->belongsTo('App\Models\Review', 'chef_id', 'id');
+    }
 }

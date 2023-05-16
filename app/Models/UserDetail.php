@@ -12,7 +12,9 @@ class UserDetail extends Model
 
     protected $fillable = [
         'gender',
-        'birthday'
+        'birthday',
+        'phone',
+        'address',
     ];
 
     protected $casts = [

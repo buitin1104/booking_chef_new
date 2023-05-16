@@ -4,16 +4,28 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\User\UpdateChefRequest;
 use Illuminate\Http\Request;
+use App\Models\Chef;
 
 class ChefController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $user = Auth::user();
+        $query = Chef::query()->with('review');
 
-        return view('users.Chef.index', [
-            'user' => $user
-        ]);
+        $params = $request->all();
+
+        if (isset($params['tu-khoa']) && $params['tu-khoa']) {
+            $query->where('name', 'like', '%'.$params['tu-khoa'].'%')
+            ->orWhere('email', 'like', '%'.$params['tu-khoa'].'%');
+        }
+
+        $chefs = $query->get();
+
+        $viewData = [
+            'chefs' => $chefs,
+        ];
+
+        return view('chef.index', $viewData);
     }
 
     public function update(UpdateChefRequest $request)
@@ -28,7 +40,7 @@ class ChefController extends Controller
         $detail->update([
             'address' => $request->address,
             'phone_number' => $request->phone_number,
-            'experience_year' => $request->experience_year, 
+            'experience_year' => $request->experience_year,
         ]);
     }
 }

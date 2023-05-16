@@ -1,0 +1,146 @@
+.complete-order-page {
+    background: #fff;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.complete-order-page .thank-you {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.complete-order-page .thank-you .icon-check {
+    font-size: 95px;
+    color: #71bed7;
+}
+
+.complete-order-page .thank-you .title {
+    font-size: 20px;
+}
+
+.complete-order-page .information {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 200px;
+    margin-top: 30px;
+    padding: 5px 10px;
+}
+
+.complete-order-page .information .title {
+    font-size: 17px;
+}
+
+.color-blue {
+    color: #71bed7;
+}
+
+.color-orange {
+    color: #ff9428;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.info-cart {
+    padding-top: 30px;
+}
+
+.info-cart .item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.info-cart .item .content {
+    display: flex;
+}
+
+.info-cart .item .content .image {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    position: relative;
+}
+
+.info-cart .item .content .image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-cart .item .content .image .quantity {
+    /* position: absolute;
+    z-index: 1;
+    background-color: #999;
+    border-radius: 50px;
+    font-size: 13px;
+    top: 0;
+    width: 24px;
+    right: 10px;
+    color: #fff;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    z-index: 1;
+    background-color: #999;
+    border-radius: 50px;
+    font-size: 13px;
+    top: -8px;
+    width: 20px;
+    right: 0px;
+    color: #fff;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-cart .item .content .des .title {
+    color: #000;
+}
+
+.info-cart .item .content .des .variation {
+    font-size: 12px;
+}
+
+.info-cart .item .price {
+    font-weight: 700;
+}
+
+.complete-order-page .btn-continue-shopping {
+    margin-top: 20px;
+    height: auto;
+    padding: 10px 30px;
+    background-color: #71bed7;
+    border-radius: 0px;
+    color: #fff;
+    float: right;
+}
+
+.complete-order-page .btn-continue-shopping:hover,
+.complete-order-page .btn-continue-shopping:active,
+.complete-order-page .btn-continue-shopping:focus {
+    background-color: #359bbd;
+    color: #fff;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
