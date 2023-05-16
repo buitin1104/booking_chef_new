@@ -85,7 +85,7 @@
                                         </ol>
                                     </td>
                                     <td>
-                                        {{ number_format($item->total) }} VNĐ
+                                        ${{ number_format($item->total) }}
                                     </td>
                                     <td>
                                         @if ($item->status === 'order')
