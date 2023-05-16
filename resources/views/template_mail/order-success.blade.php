@@ -13,12 +13,12 @@
                 <div style="border: 1px solid #ccc; border-radius: 4px; min-height: 200px; margin-top: 30px; padding: 5px 10px;">
                     <h5 style="font-size: 17px;">Thông tin khách hàng</h5>
                     <p>Họ tên: <span style="color: #71bed7;">{{ $order->user->name }}</span></p>
-                    <p>Số điện thoại: <span style="color: #71bed7;">{{ $order->user->detail->phone }}</span></p>
+                    <p>Số điện thoại: <span style="color: #71bed7;">{{ $order->user->detail ? $order->user->detail->phone : '' }}</span></p>
                     <p>Email: <span style="color: #71bed7;">{{ $order->user->email }}</span></p>
                     <p>
                         Địa chỉ:
                         <span style="color: #71bed7;">
-                            {{ $order->user->detail->address}}
+                            {{ $order->user->detail ? $order->user->detail->address : ''}}
                         </span>
                     </p>
                     <p>Trạng thái: <span style="text-transform: uppercase; color: #ff9428;">Đặt hàng</span></p>
