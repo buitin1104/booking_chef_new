@@ -22,11 +22,11 @@
                                 <input type="text" name="email" id="email" value="{{ auth()->user()->email }}" class="form-control-custom" placeholder="{{ __('Email') }}" required>
                             </div>
                             <div class="col-md-5">
-                                <input type="text" name="phone" id="phone" value="{{ $user->detail->phone }}" class="form-control-custom" placeholder="{{ __('Số điện thoại') }}" required>
+                                <input type="text" name="phone" id="phone" value="{{ $user->detail ? $user->detail->phone : '' }}" class="form-control-custom" placeholder="{{ __('Số điện thoại') }}" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="address" id="address" value="{{ $user->detail->address }}" class="form-control-custom" placeholder="{{ __('Địa chỉ') }}" required>
+                            <input type="text" name="address" id="address" value="{{ $user->detail ? $user->detail->address : '' }}" class="form-control-custom" placeholder="{{ __('Địa chỉ') }}" required>
                         </div>
                         <hr>
                         @include('order.includes.payment-method')
