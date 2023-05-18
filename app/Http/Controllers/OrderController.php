@@ -56,7 +56,10 @@ class OrderController extends Controller
         }
 
         // update address of user
-        UserDetail::where('user_id', auth()->user()->id)->update([
+        UserDetail::updateOrCreate([
+            'user_id' => auth()->user()->id
+        ], [
+            'user_id' => auth()->user()->id,
             'address' => $params['address'],
             'phone' => $params['phone'],
         ]);
