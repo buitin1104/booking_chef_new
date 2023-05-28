@@ -7,7 +7,7 @@
         </div>
         <div class="search-box">
             <form action="{{ route('chef') }}" method="GET" class="input-group mb-0">
-                <input type="text" class="form-control" value="{{ old('tu-khoa', request()->get('tu-khoa')) }}" placeholder="Tim kiem" name="tu-khoa">
+                <input type="text" class="form-control" value="{{ old('tu-khoa', request()->get('tu-khoa')) }}" placeholder="Tim Kiếm" name="tu-khoa">
 
                 <div class="input-group-append">
                     <button class="btn btn-outline-success" type="button">
