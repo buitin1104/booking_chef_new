@@ -31,7 +31,7 @@ class OrderController extends AppController
             $query = $query->where('code', 'like', '%'.$request->keyword.'%');
         }
 
-        $query->with('order_chefs', 'user', 'chefs');
+        $query->with('order_chefs', 'user', 'user.detail', 'chefs');
 
         $result = $query->get();
 
