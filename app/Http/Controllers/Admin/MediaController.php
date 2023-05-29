@@ -90,7 +90,7 @@ class MediaController extends Controller
             Image::make($file)->resize(150,150)->save(public_path($thumbnails_path));
 
             $media = Media::create([
-                'user_id' => Auth()->user()->id ?? 0,
+                'user_id' => auth()->user()->id ?? auth('admin')->user()->id,
                 'title' => $file->getClientOriginalName(),
                 'type' => $file->getClientOriginalExtension(),
                 'url' => '/'.$url,
