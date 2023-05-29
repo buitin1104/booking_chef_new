@@ -16,33 +16,24 @@
             </div>
         </div>
         <div class="col">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">About us</a>
-            <a href="#">About us</a>
+            <h4>BOOKING CHEF</h4>
+            <P>
+Chào mừng bạn đến với Booking Chef - Nền tảng đặt đầu bếp trực tuyến hàng đầu! Với những cập nhật mới nhất cho năm 2023,
+chúng tôi mang đến cho bạn trải nghiệm đặt đầu bếp trực tuyến tuyệt vời và tiện lợi nhất.
+
+Chào mừng bạn đến với Booking Chef - Nền tảng đặt đầu bếp trực tuyến hàng đầu! Với những cập nhật mới nhất cho năm 2023, 
+chúng tôi mang đến cho bạn trải nghiệm đặt đầu bếp trực tuyến tuyệt vời và tiện lợi nhất.</P>
 
         </div>
         <div class="col">
             <h4>My Account</h4>
-            <a href="#">About us</a>
-            <a href="#">About us</a>
-            <a href="#">About us</a>
-
-        </div>
-        <div class="col">
-            <h4>Payment</h4>
-            <a href="#">About us</a>
-            <a href="#">About us</a>
-            <a href="#">About us</a>
-            {{-- <div class="pay">
-                <img width="60px" src="../IMG/pament1.jpg" alt="">
-                <img width="60px" src="../IMG/bayment2.jpg" alt="">
-                <img width="60px" src="../IMG/zalopay.jpg" alt="">
-            </div> --}}
+            <a href="http://localhost:8000/lien-he">Liên hệ</a>
+            <a href="http://localhost:8000/ve-chung-toi">Về Chúng Tôi</a>
+           
 
         </div>
         <div class="copy">
-            <p>@2023, HTML CSS Ecommerce Template</p>
+            <p>@2023, HTML CSS</p>
 
         </div>
 </footer>
