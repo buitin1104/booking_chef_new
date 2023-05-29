@@ -34,7 +34,7 @@ bạn có thể truy cập vào một cộng đồng đầu bếp hàng đầu, 
         </div>
        
         <div class="copy">
-            <p>@2023, HTML CSS Ecommerce Template</p>
+            <p>@2023, HTML CSS</p>
 
         </div>
 </footer>
