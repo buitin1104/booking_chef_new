@@ -22,10 +22,18 @@ class ProductCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'slug' => 'required',
-            'price' => 'required',
-            'quantity' => 'required',
+            'name' => 'required|max:255',
+            'slug' => 'required|max:255',
+            'price' => 'required|numeric',
+            'quantity' => 'required|integer',
+            'chef_id' => 'required|exists:chefs,id'
+        ];
+    }
+
+    public function attributes()
+    {
+        return [
+            'chef_id' => 'dau bep',  
         ];
     }
 
@@ -36,6 +44,7 @@ class ProductCreateRequest extends FormRequest
             'slug.required' => 'Trường này không được để trống',
             'price.required' => 'Trường này không được để trống',
             'quantity.required' => 'Trường này không được để trống',
+            'required' => ':attribute không được để trống',
         ];
     }
 }

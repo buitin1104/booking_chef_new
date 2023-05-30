@@ -51,5 +51,7 @@
     @yield('script')
 
     <script src="https://kit.fontawesome.com/e9c9e96563.js" crossorigin="anonymous"></script>
+
+    {{ \TawkTo::widgetCode() }}
 </body>
 </html>

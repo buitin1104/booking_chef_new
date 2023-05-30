@@ -45,4 +45,5 @@
             <p>@2023, HTML CSS Ecommerce Template</p>
 
         </div>
+        
 </footer>

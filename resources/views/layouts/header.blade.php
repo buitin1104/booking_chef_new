@@ -18,7 +18,6 @@
         </div>
         <div class="menu-box">
             <ul class="nav-menu">
-                <li class="nav-menu__item">
                     <a class="active" href="{{ route('home') }}">Trang chủ</a>
                 </li>
                 <li class="nav-menu__item">
@@ -40,6 +39,7 @@
                         <span class="countProduct">{{ Session::get('countProduct') ? Session::get('countProduct') : 0 }}</span>
                         <span>Giỏ hàng</span>
                     </a>
+
                 </li>
 
                 @if (auth()->user())
@@ -122,3 +122,4 @@
         </div>
     </div>
 </nav> -->
+    
