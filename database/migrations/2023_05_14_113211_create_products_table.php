@@ -21,7 +21,8 @@ return new class extends Migration
             $table->string('sale_price')->nullable();
             $table->string('status')->nullable();
             $table->string('is_hot')->nullable();
-            $table->integer('chef_id')->default(0);
+            $table->unsignedBiginteger('chef_id')->nullable();
+            $table->foreign('chef_id')->references('id')->on('chefs')->onDelete('cascade');
             $table->timestamps();
         });
     }

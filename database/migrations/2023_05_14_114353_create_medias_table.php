@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('medias', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
+            $table->unsignedBiginteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('title', 255);
             $table->string('type', 50)->nullable();
             $table->string('url', 255);
